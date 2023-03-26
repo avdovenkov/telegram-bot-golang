@@ -3,12 +3,14 @@ package main
 import (
 	"flag"
 	"log"
+
+	"tg-bot-adviser/clienst/telegram"
 )
 
 func main() {
 	t := mustToken()
 
-	//tgClient = telegram.New(token)
+	tgClient = telegram.New(mustToken)
 
 	// fetcher = fetcher.New()
 
